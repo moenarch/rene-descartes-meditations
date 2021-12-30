@@ -1,0 +1,6 @@
+[book]
+authors = ["Cathmoelic"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Meditations on First Philosophy"
