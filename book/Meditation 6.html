@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Meditation 6 - Meditations</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Dedication.html"><strong aria-hidden="true">1.</strong> Dedication</a></li><li class="chapter-item expanded "><a href="Preface.html"><strong aria-hidden="true">2.</strong> Preface to the Reader</a></li><li class="chapter-item expanded "><a href="Synopsis.html"><strong aria-hidden="true">3.</strong> Synopsis of the Six Following Meditations</a></li><li class="chapter-item expanded "><a href="Meditation 1.html"><strong aria-hidden="true">4.</strong> Meditation 1</a></li><li class="chapter-item expanded "><a href="Meditation 2.html"><strong aria-hidden="true">5.</strong> Meditation 2</a></li><li class="chapter-item expanded "><a href="Meditation 3.html"><strong aria-hidden="true">6.</strong> Meditation 3</a></li><li class="chapter-item expanded "><a href="Meditation 4.html"><strong aria-hidden="true">7.</strong> Meditation 4</a></li><li class="chapter-item expanded "><a href="Meditation 5.html"><strong aria-hidden="true">8.</strong> Meditation 5</a></li><li class="chapter-item expanded "><a href="Meditation 6.html" class="active"><strong aria-hidden="true">9.</strong> Meditation 6</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Meditations</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="meditation-6"><a class="header" href="#meditation-6">Meditation 6</a></h1>
+<p><strong>Of the Existence of Material Things, and of the real distinction between the Soul and Body of Man</strong></p>
+<p>Nothing further now remains but to inquire whether material things exist. 
+And certainly I at least know that these may exist in so far as they are considered as the objects of pure mathematics, since in this aspect I perceive them clearly and distinctly. 
+For there is no doubt that God possesses the power to produce everything that I am capable of perceiving with distinctness, and I have never deemed that anything was impossible for Him, unless I found a contradiction in attempting to conceive it clearly. 
+Further, the faculty of imagination which I possess, and of which, experience tells me, I make use when I apply myself to the consideration of material things, is capable of persuading me of their existence; 
+for when I attentively consider what imagination is, I find that it is nothing but a certain application of the faculty of knowledge to the body which is immediately present to it, and which therefore exists.</p>
+<p>And to render this quite clear, I remark in the first place the difference that exists between the imagination and pure intellection [or conception ]. 
+For example, when I imagine a triangle, I do not conceive it only as a figure comprehended by three lines, but I also apprehend these three lines as present by the power and inward vision of my mind, and this is what I call imagining. 
+But if I desire to think of a chiliagon, I certainly conceive truly that it is a figure composed of a thousand sides, just as easily as I conceive of a triangle that it is a figure of three sides only;
+but I cannot in any way imagine the thousand sides of a chiliagon [as I do the three sides of a triangle], nor do I, so to speak, regard them as present [with the eyes of my mind].
+And although in accordance with the habit I have formed of always employing the aid of my imagination when I think of corporeal things, it may happen that in imagining a chiliagon I confusedly represent to myself some figure, yet it is very evident that this figure is not a chiliagon, since it in no way differs from that which I represent to myself when I think of a myriagon or any other many-sided figure;
+nor does it serve my purpose in discovering the properties which go to form the distinction between a chiliagon and other polygons. 
+But if the question turns upon a pentagon, it is quite true that I can conceive its figure as well as that of a chiliagon without the help of my imagination; 
+but I can also imagine it by applying the attention of my mind to each of its five sides, and at the same time to the space which they enclose. 
+And thus I clearly recognize that I have need of a particular effort of mind in order to effect the act of imagination, such as I do not require in order to understand, and this particular effort of mind clearly manifests the difference which exists between imagination and pure intellection.<br />
+I remark besides that this power of imagination which is in one, inasmuch as it differs from the power of understanding, is in no wise a necessary element in my nature, or in [my essence, that is to say, in] the essence of my mind;
+for although I did not possess it I should doubtless ever remain the same as I now am, from which it appears that we might conclude that it depends on something which differs from me. 
+And I easily conceive that if some body exists with which my mind is conjoined and united in such a way that it can apply itself to consider it when it pleases, it may be that by this means it can imagine corporeal objects; 
+so that this mode of thinking differs from pure intellection only inasmuch as mind in its intellectual activity in some manner turns on itself, and considers some of the ideas which it possesses in itself;
+while in imagining it turns towards the body, and there beholds in it something conformable to the idea which it has either conceived of itself or perceived by the senses. 
+I easily understand, I say, that the imagination could be thus constituted if it is true that body exists; 
+and because I can discover no other convenient mode of explaining it, I conjecture with probability that body does exist;
+but this is only with probability, and although I examine all things with care, I nevertheless do not find that from this distinct idea of corporeal nature, which I have in my imagination, I can derive any argument from which there will necessarily be deduced the existence of body.</p>
+<p>But I am in the habit of imagining many other things besides this corporeal nature which is the object of pure mathematics, to wit, the colors, sounds, scents, pain, and other such things, although less distinctly.
+And inasmuch as I perceive these things much better through the senses, by the medium of which, and by the memory, they seem to have reached my imagination, I believe that, in order to examine them more conveniently, it is right that I should at the same time investigate the nature of sense perception, and that I should see if from the ideas which I apprehend by this mode of thought, which I call feeling, I cannot derive some certain proof of the existence of corporeal objects.</p>
+<p>And first of all I shall recall to my memory those matters which I hitherto held to be true, as having perceived them through the senses, and the foundations on which my belief has rested;
+in the next place I shall examine the reasons which have since obliged me to place them in doubt;
+in the last place I shall consider which of them I must now believe.</p>
+<p>First of all, then, I perceived that I had a head, hands, feet, and all other members of which this body - which I considered as a part, or possibly even as the whole, of myself - is composed.
+Further I was sensible that this body was placed amidst many others, from which it was capable of being affected in many different ways, beneficial and hurtful, and I remarked that a certain feeling of pleasure accompanied those that were beneficial, and pain those which were harmful. 
+And in addition to this pleasure and pain, I also experienced hunger, thirst, and other similar appetites, as also certain corporeal inclinations towards joy, sadness, anger, and other similar passions. 
+And outside myself, in addition to extension, figure, and motions of bodies, I remarked in them hardness, heat, and all other tactice qualities, and, further, light and color, and scents and sounds, the variety of which gave me the means of distinguishing the sky, the earth, the sea, and generally all the other bodies, one from the other. 
+And certainly, considering the ideas of all these qualities which presented themselves to my mind, and which alone I perceived properly or immediately, it was not without reason that I believed myself to perceive objects quite different from my thought, to wit, bodies from which those ideas proceeded; 
+for I found by experience that these ideas presented themselves to me without my consent being requisite, so that I could not perceive any object, however desirous I might be, unless it were present to the organs of sense; 
+and it was not in my power not to perceive it, when it was present. 
+And because the ideas which I received through the senses were much more lively, more clear, and even, in their own way, more distinct than any of those which I could of myself frame in meditation, or than those I found impressed on my memory, it appeared as though they could not have proceeded from my mind, so that they must necessarily have been produced in me by some other things. 
+And having no knowledge of those objects excepting the knowledge which the ideas themselves gave me, nothing was more likely to occur to my mind than that the objects were similar to the ideas which were caused. 
+And because I likewise remembered that I had formerly made use of my senses rather than my reason, and recognized that the ideas which I formed of myself were not so distinct as those which I perceived through the senses, and that they were most frequently even composed of portions of these last, I persuaded myself easily that I had no idea in my mind which had not formerly come to me through the senses. 
+Nor was it without some reason that I believed that this body (which be a certain special right I call my own) belonged to me more properly and more strictly than any other;
+for in fact I could never be separated from it as from other bodies; 
+I experienced in it and on account of it all my appetites and affections, and finally I was touched by the feeling of pain and the titillation of pleasure in its parts, and not in the parts of other bodies which were separated from it. 
+But when I inquired, why, from some, I know not what, painful sensation, there follows sadness of mind, and from the pleasurable sensation there arises joy, or why this mysterious pinching of the stomach which I call hunger causes me to desire to eat, and dryness of throat causes a desire to drink, and so on, I could give no reason excepting that nature taught me so; 
+for there is certainly no affinity (that I at least can understand) between the craving of the stomach and the desire to eat, any more than between the perception of whatever causes pain and the thought of sadness which arises from this perception.
+And in the same way it appeared to me that I had learned from nature all the other judgments which I formed regarding the objects of my senses, since I remarked that these judgments were formed in me before I had the leisure to weigh and consider any reasons which might oblige me to make them.</p>
+<p>But afterwards many experiences little by little destroyed all the faith which I had rested in my senses; 
+for I from time to time observed that those towers which from afar appeared to me to be round, more closely observed seemed square, and that colossal statues raised on the summit of these towers, appeared as quite tiny statues when viewed from the bottom; 
+and so in an infinitude of other cases I found error in judgments founded on the external senses. 
+And not only in those founded on the external senses, but even in those founded on the internal as well; 
+for is there anything more intimate or more internal than pain?
+And yet I have learned from some persons whose arms or legs have been cut off, that they sometimes seemed to feel pain in the part which had been amputated, which made me think that I could not be quite certain that it was a certain member which pained me, even although I felt pain in it. 
+And to those grounds of doubt I have lately added two others, which are very general; 
+the first is that I never have believed myself to feel anything in waking moments which I cannot also sometimes believe myself to feel when I sleep, and as I do not think that these things which I seem to feel in sleep, proceed from objects outside of me, I do not see any reason why I should have this belief regarding objects which I seem to perceive while awake. 
+The other was that being still ignorant, or rather supposing myself to be ignorant, of the author of my being, I saw nothing to prevent me from having been so constituted by nature that I might be deceived even in matters which seemed to me to be most certain. 
+And as to the grounds on which I was formerly persuaded of the truth of sensible objects, I had not much trouble in replying to them. 
+For since nature seemed to cause me to lean towards many things from which reason repelled me, I did not believe that I should trust much to the teachings of nature. 
+And although the ideas which I receive by the senses do not depend on my will, I did not think that one should for that reason conclude that they proceeded from things different from myself, since possibly some faculty might be discovered in me - though hitherto unknown to me - which produced them.</p>
+<p>But now that I begin to know myself better, and to discover more clearly the author of my being, I do not in truth think that I should rashly admit all the matters which the senses seem to teach us, but, on the other hand, I do not think that I should doubt them all universally.</p>
+<p>And first of all, because I know that all things which I apprehend clearly and distinctly can be created by God as I apprehend them, it suffices that I am able to apprehend one thing apart from another clearly and distinctly in order to be certain that the one is different from the other, since they may be made to exist in separation at least by the omnipotence of God; 
+and it does not signify by what power this separation is made in order to compel me to judge them to be different: 
+and, therefore, just because I know certainly that I exist, and that meanwhile I do not remark that any other thing necessarily pertains to my nature or essence, excepting that I am a thinking thing, I rightly conclude that my essence consists solely in the fact that I am a thinking thing [or a substance whose whole essence or nature is to think]. 
+And although possibly (or rather certainly, as I shall say in a moment) I possess a body with which I am very intimately conjoined, yet because, on the one side, I have a clear and distinct idea of myself inasmuch as I am only a thinking and unextended thing, and as, on the other, I possess a distinct idea of body, inasmuch as it is only an extended and unthinking thing, it is certain that this I [that is to say, my soul by which I am what I am], is entirely and absolutely distinct from my body, and can exist without it.</p>
+<p>I further find in myself faculties employing modes of thinking peculiar to themselves, to wit, the faculties of imagination and feeling, without which I can easily conceive myself clearly and distinctly as a complete being; 
+while, on the other hand, they cannot be so conceived apart from me, that is without an intelligent substance in which they reside, for [in the notion we have of these faculties, or, to use the language of the Schools] in their formal concept, some kind of intellection is comprised, from which I infer that they are distinct from me as its modes are from a thing. 
+I observe also in me some other faculties such as that of change of position, the assumption of different figures and such like, which cannot be conceived, any more than can the preceding, apart from some substance to which they are attached, and consequently cannot exist without it; 
+but it is very clear that these faculties, if it be true that they exist, must be attached to some corporeal or extended substance, and not to an intelligent substance, since in the clear and distinct conception of these there is some sort of extension found to be present, but no intellection at all. 
+There is certainly further in me a certain passive faculty of perception, that is, of receiving and recognizing the ideas of sensible things, but this would be useless to me [and I could in no way avail myself of it], if there were not either in me or in some other thing another active faculty capable of forming and producing these ideas. 
+But this active faculty cannot exist in me [inasmuch as I am a thing that thinks] seeing that it does not presuppose thought, and also that those ideas are often produced in me without my contributing in any way to the same, and often even against my will; 
+it is thus necessarily the case that the faculty resides in some substance different from me in which all the reality which is objectively in the ideas that are produced by this faculty is formally or eminently contained, as I remarked before. 
+And this substance is either a body, that is, a corporeal nature in which there is contained formally [and really] all that which is objectively [and by representation] in those ideas, or it is God Himself, or some other creature more noble than body in which that same is contained eminently. 
+But, since God is no deceiver, it is very manifest that He does not communicate to me these ideas immediately and by Himself, nor yet by the intervention of some creature in which their reality is not formally, but only eminently, contained. 
+For since He has given me no faculty to recognize that this is the case, but, on the other hand, a very great inclination to believe [that they are sent to me or] that they are conveyed to me by corporeal objects, I do not see how He could be defended from the accusation of deceit if these ideas were produced by causes other than corporeal objects. 
+Hence we must allow that corporeal things exist. 
+However, they are perhaps not exactly what we perceive by the senses, since this comprehension by the senses is in many instances very obscure and confused; 
+but we must at least admit that all things which I conceive in them clearly and distinctly, that is to say, all things which, speaking generally, are comprehended in the object of pure mathematics, are truly to be recognized as external objects.</p>
+<p>As to other things, however, which are either particular only, as, for example, that the sun is of such and such a figure, etc., or which are less clearly and distinctly conceived, such as light, sound, pain and the like, it is certain that although they are very dubious and uncertain, yet on the sole ground that God is not a deceiver, and that consequently He has not permitted any falsity to exist in my opinion which He has not likewise given me the faculty of correcting, I may assuredly hope to conclude that I have within me the means of arriving at the truth even here. 
+And first of all there is no doubt that in all things which nature teaches me there is some truth contained; 
+for by nature, considered in general, I now understand no other thing than either God Himself or else the order and disposition which God has established in created things; 
+and by my nature in particular I understand no other thing than the complexus of all the things which God has given me.</p>
+<p>But there is nothing which this nature teaches me more expressly [nor more sensibly] than that I have a body which is adversely affected when I feel pain, which has need of food or drink when I experience the feelings of hunger and thirst, and so on; 
+nor can I doubt there being some truth in all this.</p>
+<p>Nature also teaches me by these sensations of pain, hunger, thirst, etc., that I am not only lodged in my body as a pilot in a vessel, but that I am very closely united to it, and so to speak so intermingled with it that I seem to compose with it one whole. 
+For if that were not the case, when my body is hurt, I, who am merely a thinking thing, should not feel pain, for I should perceive this wound by the understanding only, just as the sailor perceives by sight when something is damaged in his vessel; 
+and when my body has need of drink or food, I should clearly understand the fact without being warned of it by confused feelings of hunger and thirst. 
+For all these sensations of hunger, thirst, pain, etc. are in truth none other than certain confused modes of thought which are produced by the union and apparent intermingling of mind and body.</p>
+<p>Moreover, nature teaches me that many other bodies exist around mine, of which some are to be avoided, and others sought after. 
+And certainly from the fact that I am sensible of different sorts of colors, sounds, scents, tastes, heat, hardness, etc., I very easily conclude that there are in the bodies from which all these diverse sense-perceptions proceed certain variations which answer to them, although possibly these are not really at all similar to them. 
+And also from the fact that amongst these different sense-perceptions some are very agreeable to me and others disagreeable, it is quite certain that my body (or rather myself in my entirety, inasmuch as I am formed of body and soul) may receive different impressions agreeable and disagreeable from the other bodies which surround it.</p>
+<p>But there are many other things which nature seems to have taught me, but which at the same time I have never really received from her, but which have been brought about in my mind by a certain habit which I have of forming inconsiderate judgments on things;
+and thus it may easily happen that these judgments contain some error. 
+Take, for example, the opinion which I hold that all space in which there is nothing that affects [or makes an impression on] my senses is void; 
+that in a body which is warm there is something entirely similar to the idea of heat which is in me; 
+that in a white or green body there is the same whiteness or greenness that I perceive; 
+that in a bitter or sweet body there is the same taste, and so on in other instances; 
+that the stars, the towers, and all other distant bodies are of the same figure and size as they appear from far off to our eyes, etc. 
+But in order that in this there should be nothing which I do not conceive distinctly, I should define exactly what I really understand when I say that I am taught somewhat by nature.
+For here I take nature in a more limited signification than when I term it the sum of all the things given me by God, since in this sum many things are comprehended which only pertain to mind (and to these I do not refer in speaking of nature) such as the notion which I have of the fact that what has once been done cannot ever be undone and an infinitude of such things which I know by the light of nature [without the help of the body];
+and seeing that it comprehends many other matters besides which only pertain to body, and are no longer here contained under the name of nature, such as the quality of weight which it possesses and the like, with which I also do not deal; 
+for in talking of nature I only treat of those things given by God to me as a being composed of mind and body. 
+But the nature here described truly teaches me to flee from things which cause the sensation of pain, and seek after the things which communicate to me the sentiment of pleasure and so forth; 
+but I do not see that beyond this it teaches me that from those diverse sense-perceptions we should ever form any conclusion regarding things outside of us, without having [carefully and maturely] mentally examined them beforehand. 
+For it seems to me that it is mind alone, and not mind and body in conjunction, that is requisite to a knowledge of the truth in regard to such things. 
+Thus, although a star makes no larger an impression on my eye than the flame of a little candle there is yet in me no real or positive propensity impelling me to believe that it is not greater than that flame; 
+but I have judged it to be so from my earliest years, without any rational foundation.
+And although in approaching fire I feel heat, and in approaching it a little too near I even feel pain, there is at the same time no reason in this which could persuade me that there is in the fire something resembling this heat any more than there is in it something resembling the pain; 
+all that I have any reason to believe from this is, that there is something in it, whatever it may be, which excites in me these sensations of heat or of pain. 
+So also, although there are spaces in which I find nothing which excites my senses, I must not from that conclude that these spaces contain no body; 
+for I see in this, as in other similar things, that I have been in the habit of perverting the order of nature, because these perceptions of sense having bee placed within me by nature merely for the purpose of signifying to my mind what things are beneficial or hurtful to the composite whole of which it forms a part, and being up to that point sufficiently clear and distinct, I yet avail myself of them as though they were absolute rules by which I might immediately determine the essence of the bodies which are outside me, as to which, in fact, they can teach me nothing but what is most obscure and confused.</p>
+<p>But I have already sufficiently considered how, not withstanding the supreme goodness of God, falsity enters into the judgments I make. 
+Only here a new difficulty is presented - one respecting those things the pursuit or avoidance of which is taught me by nature, and also respecting the internal sensations which I possess, and in which I seem to have sometimes detected error [and thus to be directly deceived by my own nature].
+To take an example, the agreeable taste of some food in which poison has been intermingled may induce me to partake of the poison, and thus deceive me. 
+It is true, at the same time, that in this case nature may be excused, for it only induces me to desire food in which I find a pleasant taste, and not to desire the poison which is unknown to it; 
+and thus I can infer nothing from this fact, except that my nature is not omniscient, at which there is certainly no reason to be astonished, since man, being finite in nature, can only have knowledge the perfectness of which is limited.</p>
+<p>But we not infrequently deceive ourselves even in those things to which we are directly impelled by nature, as happens with those who when they are sick desire to drink or eat things hurtful to them.
+It will perhaps be said here that the cause of their deceptiveness is that their nature is corrupt, but that does not remove the difficulty, because a sick man is none the less truly God's creature than he who is in health; 
+and it is therefore as repugnant to God's goodness for the one to have a deceitful nature as it is for the other. 
+And as a clock composed of wheels and counter-weights no less exactly observes the laws of nature when it is badly made, and does not show the time properly, than when it entirely satisfies the wishes of its maker, and as, if I consider the body of a man as being a sort of machine so built up and composed of nerves, muscles, veins, blood and skin, that though there were no mind in it at all, it would not cease to have the same motions as at present, exception being made of those movements which are due to the direction of the will, and in consequence depend upon the mind [as apposed to those which operate by the disposition of its organs], I easily recognize that it would be as natural to this body, supposing it to be, for example, dropsical, to suffer the parchedness of the throat which usually signifies to the mind the feeling of thirst, and to be disposed by this parched feeling to move the nerves and other parts in the way requisite for drinking, and thus to augment its malady and do harm to itself, as it is natural to it, when it has no indisposition, to be impelled to drink for its good by a similar cause. 
+And although, considering the use to which the clock has been destined by its maker, I may say that it deflects from the order of its nature when it does not indicate the hours correctly; 
+and as, in the same way, considering the machine of the human body as having been formed by God in order to have in itself all the movements usually manifested there, I have reason for thinking that it does not follow the order of nature when, if the throat is dry, drinking does harm to the conservation of health, nevertheless I recognize at the same time that this last mode of explaining nature is very different from the other. 
+For this is but a purely verbal characterization depending entirely on my thought, which compares a sick man and a badly constructed clock with the idea which I have of a healthy man and a well made clock, and it is hence extrinsic to the things to which it is applied; 
+but according to the other interpretation of the term nature I understand something which is truly found in things and which is therefore not without some truth.</p>
+<p>But certainly although in regard to the dropsical body it is only so to speak to apply an extrinsic term when we say that its nature is corrupted, inasmuch as apart from the need to drink, the throat is parched; 
+yet in regard to the composite whole, that is to say, to the mind or soul united to this body, it is not a purely verbal predicate, but a real error of nature, for it to have thirst when drinking would be hurtful to it. 
+And thus it still remains to inquire how the goodness of God does not prevent the nature of man so regarded from being fallacious.</p>
+<p>In order to begin this examination, then, I here say, in the first place, that there is a great difference between mind and body, inasmuch as body is by nature always divisible, and the mind is entirely indivisible. 
+For, as a matter of fact, when I consider the mind, that is to say, myself inasmuch as I am only a thinking thing, I cannot distinguish in myself any parts, but apprehend myself to be clearly one and entire; 
+and although the whole mind seems to be united to the whole body, yet if a foot, or an arm, or some other part, is separated from my body, I am aware that nothing has been taken away from my mind. 
+And the faculties of willing, feeling, conceiving, etc. cannot be properly speaking said to be its parts, for it is one and the same mind which employs itself in willing and in feeling and understanding. 
+But it is quite otherwise with corporeal or extended objects, for there is not one of these imaginable by me which my mind cannot easily divide into parts, and which consequently I do not recognize as being divisible; 
+this would be sufficient to teach me that the mind or soul of man is entirely different from the body, if I had not already learned it from other sources.</p>
+<p>I further notice that the mind does not receive the impressions from all parts of the body immediately, but only from the brain, or perhaps even from one of its smallest parts, to wit, from that in which the common sense is said to reside, which, whenever it is disposed in the same particular way, conveys the same thing to the mind, although meanwhile the other portions of the body may be differently disposed, as is testified by innumerable experiments which it is unnecessary here to recount.<br />
+I notice, also, that the nature of body is such that none of its parts can be moved by another part a little way off which cannot also be moved in the same way by each one of the parts which are between the two, although this more remote part does not act at all. As, for example, in the cord $ABCD$ [which is in tension] if we pull the last part $D$, the first part $A$ will not be moved in any way differently from what would be the case if one of the intervening parts $B$ or $C$ were pulled, and the last part $D$ were to remain unmoved.
+And in the same way, when I feel pain in my foot, my knowledge of physics teaches me that this sensation is communicated by means of nerves dispersed through the foot, which, being extended like cords from there to the brain, when they are contracted in the foot, at the same time contract the inmost portions of the brain which is their extremity and place of origin, and then excite a certain movement which nature has established in order to cause the mind to be affected by a sensation of pain represented as existing in the foot. 
+But because these nerves must pass through the tibia, the thigh, the loins, the back and the neck, in order to reach from the leg to the brain, it may happen that although their extremities which are in the foot are not affected, but only certain ones of their intervening parts [which pass by the loins or the neck], this action will excite the same movement in the brain that might have been excited there by a hurt received in the foot, in consequence of which the mind will necessarily feel in the foot the same pain as if it had received a hurt. 
+And the same holds good of all the other perceptions of our senses.</p>
+<p>I notice finally that since each of the movements which are in the portion of the brain by which the mind is immediately affected brings about one particular sensation only, we cannot under the circumstances imagine anything more likely than that this movement, amongst all the sensations which it is capable of impressing on it, causes mind to be affected by that one which is best fitted and most generally useful for the conservation of the human body when it is in health. 
+But experience makes us aware that all the feelings with which nature inspires us are such as I have just spoken of; 
+and there is therefore nothing in them which does not give testimony to the power and goodness of the God [who has produced them ]. 
+Thus, for example, when the nerves which are in the feet are violently or more than usually moved, their movement, passing through the medulla of the spine to the inmost parts of the brain, gives a sign to the mind which makes it feel somewhat, to wit, pain, as though in the foot, by which the mind is excited to do its utmost to remove the cause of the evil as dangerous and hurtful to the foot. 
+It is true that God could have constituted the nature of man in such a way that this same movement in the brain would have conveyed something quite different to the mind; 
+for example, it might have produced consciousness of itself either in so far as it is in the brain, or as it is in the foot, or as it is in some other place between the foot and the brain, or it might finally have produced consciousness of anything else whatsoever; 
+but none of all this would have contributed so well to the conservation of the body. 
+Similarly, when we desire to drink, a certain dryness of the throat is produced which moves its nerves, and by their means the internal portions of the brain; 
+and this movement causes in the mind the sensation of thirst, because in this case there is nothing more useful to us than to become aware that we have need to drink for the conservation of our health; 
+and the same holds good in other instances.</p>
+<p>From this it is quite clear that, not withstanding the supreme goodness of God, the nature of man, inasmuch as it is composed of mind and body, cannot be otherwise than sometimes a source of deception. 
+For if there is any cause which excites, not in the foot but in some part of the nerves which are extended between the foot and the brain, or even in the brain itself, the same movement which usually is produced when the foot is detrimentally affected, pain will be experienced as though it were in the foot, and the sense will thus naturally be deceived; 
+for since the same movement in the brain is capable of causing but one sensation in the mind, and this sensation is much more frequently excited by a cause which hurts the foot than by another existing in some other quarter, it is reasonable that it should convey to the mind pain in the foot rather than in any other part of the body. 
+And although the parchedness of the throat does not always proceed, as it usually does, from the fact that drinking is necessary for the health of the body, but sometimes comes from quite a different cause, as is the case with dropsical patients, it is yet much better that it should mislead on this occasion than if, on the other hand, it were always to deceive us when the body is in good health; 
+and so on in similar cases.</p>
+<p>And certainly this consideration is of great service to me, not only in enabling me to recognize all the errors to which my nature is subject, but also in enabling me to avoid them or to correct them more easily.
+For knowing that all my senses more frequently indicate to me truth than falsehood respecting the things which concern that which is beneficial to the body, and being able almost always to avail myself of many of them in order to examine one particular thing, and, besides that, being able to make use of my memory in order to connect the present with the past, and of my understanding which already has discovered all the causes of my errors, I ought no longer to fear that falsity may be found in matters every day presented to me by my senses.
+And I ought to set aside all the doubts of these past days as hyperbolical and ridiculous, particularly that very common uncertainty respecting sleep, which I could not distinguish from the waking state; 
+for at present I find a very notable difference between the two, inasmuch as our memory can never connect our dreams one with the other, or with the whole course of our lives, as it unites events which happen to us while we are awake. 
+And, as a matter of fact, if someone, while I was awake, quite suddenly appeared to me and disappeared as fast as do the images which I see in sleep, so that I could not know from whence the form came nor whither it went, it would not be without reason that I should deem it a spectre or a phantom formed by my brain [and similar to those which I form in sleep], rather than a real man. 
+But when I perceive things as to which I know distinctly both the place from which they proceed, and that in which they are, and the time at which they appeared to me; 
+and when, without any interruption, I can connect the perceptions which I have of them with the whole course of my life, I am perfectly assured that these perceptions occur while I am waking and not during sleep. 
+And I ought in no wise to doubt the truth of such matters, if, after having called up all my senses, my memory, and my understanding, to examine them, nothing is brought to evidence by any one of them which is repugnant to what is set forth by the others. 
+For because God is in no wise a deceiver, it follows that I am not deceived in this. 
+But because the exigencies of action often oblige us to make up our minds before having leisure to examine matters carefully, we must confess that the life of man is very frequently subject to error in respect to individual objects, and we must in the end acknowledge the infirmity of our nature.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Meditation 5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Meditation 5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
